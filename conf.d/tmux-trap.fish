@@ -1,0 +1,1 @@
+/Users/xf/.dotfiles/tmux/conf.d/tmux-trap.fish

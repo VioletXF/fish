@@ -1,0 +1,1 @@
+/Users/xf/.dotfiles/gnupg/conf.d/gpg.fish

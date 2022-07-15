@@ -1,0 +1,1 @@
+/Users/xf/.dotfiles/homebrew/conf.d/homebrew.fish
