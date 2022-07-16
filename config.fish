@@ -3,6 +3,9 @@ if status is-interactive
 	if type -q nodenv
 		source (nodenv init - | psub)
 	end
+	if type -q pyenv
+		source (pyenv init -| psub)
+	end
 end
 
 test -e {$HOME}/.iterm2_shell_integration.fish ; and source {$HOME}/.iterm2_shell_integration.fish

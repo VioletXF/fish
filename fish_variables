@@ -1,5 +1,6 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
+SETUVAR --export BUN_INSTALL:/Users/xf/\x2ebun
 SETUVAR --export DOTFILES:/Users/xf/\x2edotfiles
 SETUVAR --export EDITOR:nvim
 SETUVAR FZF_DEFAULT_OPTS:\x2d\x2dheight\x2040\x25
@@ -257,4 +258,4 @@ SETUVAR fish_pager_color_selected_background:\x2d\x2dreverse
 SETUVAR fish_pager_color_selected_completion:\x1d
 SETUVAR fish_pager_color_selected_description:\x1d
 SETUVAR fish_pager_color_selected_prefix:\x1d
-SETUVAR fish_user_paths:/Users/xf/\x2edotfiles/bin\x1e/opt/homebrew/bin\x1e/Users/xf/Developer/Go/bin\x1e/Users/xf/\x2ecargo/bin
+SETUVAR fish_user_paths:/Users/xf/\x2ebun/bin\x1e/Users/xf/\x2edotfiles/bin\x1e/opt/homebrew/bin\x1e/Users/xf/Developer/Go/bin\x1e/Users/xf/\x2ecargo/bin
