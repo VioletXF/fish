@@ -96,6 +96,7 @@ untracked = "[?($count) ](fg:39 bg:234)"
 deleted = "[✘($count) ](fg:red bg:234)"
 ahead = "⇡($count) "
 behind = "⇣($count) "
+diverged = "⇕ "
 format = '[[$ahead_behind[$all_status](bg:234)](bg:234 fg:76)]($style)'
 #format = '([\[$all_status$ahead_behind\]]($style) )'
 
