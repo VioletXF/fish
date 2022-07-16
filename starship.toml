@@ -88,8 +88,8 @@ format = '[ ╱](bg:234 fg:242)[ $symbol $branch ]($style)'
 
 [git_status]
 style = "bg:234"
-stashed = "*$count "
-conflicted = "[~($count) ](red)"
+stashed = "[*$count ](fg:178 bg:234)"
+conflicted = "[~($count) ](fg:red bg:234)"
 staged = "[+($count) ](fg:178 bg:234)"
 modified = "[!($count) ](fg:178 bg:234)"
 untracked = "[?($count) ](fg:39 bg:234)"
