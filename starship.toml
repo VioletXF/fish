@@ -1,4 +1,5 @@
 add_newline = false
+
 format = """
 [](234)\
 $username\
@@ -31,9 +32,6 @@ $python\
 $docker_context\
 $time](bg:234)\
 """
-
-# Disable the blank line at the start of the prompt
-# add_newline = false
 
 # You can also replace your username with a neat symbol like  to save some space
 [username]
