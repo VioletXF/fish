@@ -11,11 +11,7 @@ $git_state\
 $git_metrics\
 $git_status\
 [](fg:234)\
-\n\
-$character\
-"""
-
-right_format ="""
+$fill\
 [$status\
 $custom\
 $c\
@@ -32,6 +28,8 @@ $rust\
 $python\
 $docker_context\
 $time](bg:234)\
+\n\
+$character\
 """
 
 # You can also replace your username with a neat symbol like  to save some space
@@ -157,4 +155,5 @@ recognize_signal_code = true
 [git_metrics]
 disabled = true
 
-
+[fill]
+symbol = " "
