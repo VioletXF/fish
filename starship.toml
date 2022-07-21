@@ -22,6 +22,7 @@ $elm\
 $golang\
 $haskell\
 $java\
+$kotlin\
 $julia\
 $nodejs\
 $nim\
@@ -110,6 +111,10 @@ format = '[$symbol ($version) ]($style)'
 
 [java]
 symbol = " "
+format = '[$symbol ($version) ]($style)'
+
+[kotlin]
+symbol = "🅺"
 format = '[$symbol ($version) ]($style)'
 
 [julia]
