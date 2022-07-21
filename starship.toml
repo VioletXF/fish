@@ -142,9 +142,11 @@ time_format = "%T" # Hour:Minute Format
 format = '[$time ]($style)'
 
 [status]
-format = '[\[$symbol$common_meaning$signal_name$maybe_int\] ]($style)'
+format = '[\[$symbol $common_meaning$signal_name$maybe_int\] ]($style)'
 disabled = false
 map_symbol = true
+not_executable_symbol = ''
+not_found_symbol = ''
 recognize_signal_code = true
 
 [git_metrics]
