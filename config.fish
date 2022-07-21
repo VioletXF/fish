@@ -10,3 +10,6 @@ end
 
 test -e {$HOME}/.iterm2_shell_integration.fish ; and source {$HOME}/.iterm2_shell_integration.fish
 status is-interactive && starship init fish | source
+if type -q thefuck
+	thefuck --alias | source
+end
