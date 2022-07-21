@@ -17,6 +17,7 @@ $character\
 
 right_format ="""
 [$status\
+$custom\
 $c\
 $elixir\
 $elm\
