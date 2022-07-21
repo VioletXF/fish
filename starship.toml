@@ -1,4 +1,5 @@
 add_newline = false
+
 format = """
 [](234)\
 $username\
@@ -16,6 +17,7 @@ $character\
 
 right_format ="""
 [$status\
+$custom\
 $c\
 $elixir\
 $elm\
@@ -31,9 +33,6 @@ $python\
 $docker_context\
 $time](bg:234)\
 """
-
-# Disable the blank line at the start of the prompt
-# add_newline = false
 
 # You can also replace your username with a neat symbol like  to save some space
 [username]
@@ -147,7 +146,7 @@ time_format = "%T" # Hour:Minute Format
 format = '[$time ]($style)'
 
 [status]
-format = '[\[$symbol $common_meaning$signal_name$maybe_int\] ]($style)'
+format = '[$symbol $common_meaning$signal_name$maybe_int ]($style)'
 disabled = false
 map_symbol = true
 not_executable_symbol = ''
