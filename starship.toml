@@ -27,6 +27,7 @@ $julia\
 $nodejs\
 $nim\
 $rust\
+$python\
 $time](bg:234)\
 [ ](234)\
 \n\
@@ -156,7 +157,7 @@ style = "bg:234"
 format = '[$time ]($style)'
 
 [status]
-format = '[$symbol $common_meaning$signal_name$maybe_int ]($style)'
+format = '[$symbol $common_meaning$signal_name$maybe_int ]($style)[╱ ](bg:234 fg:242)'
 style = 'red bold bg:234'
 disabled = false
 map_symbol = true
