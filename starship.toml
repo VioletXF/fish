@@ -3,16 +3,18 @@ add_newline = false
 format = """
 [](234)\
 $username\
-[](bg:234 fg:234)\
+[ ](bg:234)\
 $directory\
 $git_branch\
 $git_commit\
 $git_state\
 $git_metrics\
 $git_status\
-[](fg:234)\
+[](234)\
 $fill\
+[ ](inverted 234)\
 [$status\
+$docker_context\
 $custom\
 $c\
 $elixir\
@@ -25,9 +27,8 @@ $julia\
 $nodejs\
 $nim\
 $rust\
-$python\
-$docker_context\
 $time](bg:234)\
+[ ](234)\
 \n\
 $character\
 """
@@ -65,18 +66,22 @@ repo_root_format = "[$before_root_path]($style)[$repo_root]($repo_root_style)[$p
 
 [c]
 symbol = " "
+style = "bg:234"
 format = '[$symbol ($version) ]($style)'
 
 [docker_context]
 symbol = " "
-format = '[$symbol $context]($style) $path '
+style = "bg:234"
+format = '[$symbol$context $path]($style)[╱ ](bg:234 fg:242)'
 
 [elixir]
 symbol = " "
+style = "bg:234"
 format = '[$symbol ($version) ]($style)'
 
 [elm]
 symbol = " "
+style = "bg:234"
 format = '[$symbol ($version) ]($style)'
 
 [git_branch]
@@ -100,51 +105,59 @@ format = '[[$ahead_behind[$all_status](bg:234)](bg:234 fg:76)]($style)'
 
 [golang]
 symbol = " "
+style = "bg:234"
 format = '[$symbol ($version) ]($style)'
 
 [haskell]
 symbol = " "
+style = "bg:234"
 format = '[$symbol ($version) ]($style)'
 
 [java]
 symbol = " "
+style = "bg:234"
 format = '[$symbol ($version) ]($style)'
 
 [kotlin]
 symbol = "🅺"
+style = "bg:234"
 format = '[$symbol ($version) ]($style)'
 
 [julia]
 symbol = " "
+style = "bg:234"
 format = '[$symbol ($version) ]($style)'
 
 [nodejs]
 symbol = ""
+style = "bg:234"
 format = '[$symbol ($version) ]($style)'
 
 [python]
 symbol = ""
 pyenv_version_name = true
-style = "39 bold"
+style = "39 bold bg:234"
 format = '[$symbol ($version) ]($style)'
 
 [nim]
 symbol = " "
-style = "bg:#86BBD8"
+style = "bg:234"
 format = '[[ $symbol ($version) ](bg:#86BBD8) ]($style)'
 
 [rust]
 symbol = ""
+style = "bg:234"
 format = '[$symbol ($version) ]($style)'
 
 [time]
 disabled = false
 time_format = "%T" # Hour:Minute Format
-#style = "bg:#33658A"
+style = "bg:234"
 format = '[$time ]($style)'
 
 [status]
 format = '[$symbol $common_meaning$signal_name$maybe_int ]($style)'
+style = 'red bold bg:234'
 disabled = false
 map_symbol = true
 not_executable_symbol = ''
