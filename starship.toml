@@ -10,9 +10,11 @@ $git_commit\
 $git_state\
 $git_metrics\
 $git_status\
-[](234)\
+[ ](bg:234)\
+[](234)\
 $fill\
-[ ](inverted 234)\
+[](234)\
+[ ](bg:234)\
 [$status\
 $docker_context\
 $custom\
@@ -67,23 +69,19 @@ repo_root_format = "[$before_root_path]($style)[$repo_root]($repo_root_style)[$p
 
 [c]
 symbol = " "
-style = "bg:234"
-format = '[$symbol ($version) ]($style)'
+format = '[$symbol ($version) ]($style bg:234)'
 
 [docker_context]
 symbol = " "
-style = "bg:234"
-format = '[$symbol$context $path]($style)[╱ ](bg:234 fg:242)'
+format = '[$symbol$context $path]($style bg:234)[╱ ](bg:234 fg:242)'
 
 [elixir]
 symbol = " "
-style = "bg:234"
-format = '[$symbol ($version) ]($style)'
+format = '[$symbol ($version) ]($style bg:234)'
 
 [elm]
 symbol = " "
-style = "bg:234"
-format = '[$symbol ($version) ]($style)'
+format = '[$symbol ($version) ]($style bg:234)'
 
 [git_branch]
 symbol = ""
@@ -106,33 +104,27 @@ format = '[[$ahead_behind[$all_status](bg:234)](bg:234 fg:76)]($style)'
 
 [golang]
 symbol = " "
-style = "bg:234"
-format = '[$symbol ($version) ]($style)'
+format = '[$symbol ($version) ]($style bg:234)'
 
 [haskell]
 symbol = " "
-style = "bg:234"
-format = '[$symbol ($version) ]($style)'
+format = '[$symbol ($version) ]($style bg:234)'
 
 [java]
 symbol = " "
-style = "bg:234"
-format = '[$symbol ($version) ]($style)'
+format = '[$symbol ($version) ]($style bg:234)'
 
 [kotlin]
 symbol = "🅺"
-style = "bg:234"
-format = '[$symbol ($version) ]($style)'
+format = '[$symbol ($version) ]($style bg:234)'
 
 [julia]
 symbol = " "
-style = "bg:234"
-format = '[$symbol ($version) ]($style)'
+format = '[$symbol ($version) ]($style bg:234)'
 
 [nodejs]
 symbol = ""
-style = "bg:234"
-format = '[$symbol ($version) ]($style)'
+format = '[$symbol ($version) ]($style bg:234)'
 
 [python]
 symbol = ""
@@ -142,19 +134,16 @@ format = '[$symbol ($version) ]($style)'
 
 [nim]
 symbol = " "
-style = "bg:234"
-format = '[[ $symbol ($version) ](bg:#86BBD8) ]($style)'
+format = '[[ $symbol ($version) ](bg:#86BBD8) ]($style bg:234)'
 
 [rust]
 symbol = ""
-style = "bg:234"
-format = '[$symbol ($version) ]($style)'
+format = '[$symbol ($version) ]($style bg:234)'
 
 [time]
 disabled = false
 time_format = "%T" # Hour:Minute Format
-style = "bg:234"
-format = '[$time ]($style)'
+format = '[ $time](fg:248 bg:234)'
 
 [status]
 format = '[$symbol $common_meaning$signal_name$maybe_int ]($style)[╱ ](bg:234 fg:242)'
