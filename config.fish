@@ -19,7 +19,7 @@ if status is-interactive
 					brew install starship
 				else if type -q curl
 					curl -sS https://starship.rs/install.sh | sh
-					source $(status --current-filename)
+					source (status --current-filename)
 				else
 					echo 'Error: curl not found!' >&2
 				end
