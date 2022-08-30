@@ -9,7 +9,6 @@ SETUVAR FZF_LEGACY_KEYBINDINGS:1
 SETUVAR FZF_PREVIEW_DIR_CMD:ls
 SETUVAR FZF_PREVIEW_FILE_CMD:head\x20\x2dn\x2010
 SETUVAR FZF_TMUX_HEIGHT:40\x25
-SETUVAR --export --path GOPATH:/Users/xf/Developer/Go
 SETUVAR --export LESS:\x2dr
 SETUVAR --export PROJECTS:/Users/xf/Developer
 SETUVAR --export STARSHIP_CONFIG:/Users/xf/\x2econfig/fish/starship\x2etoml
@@ -183,6 +182,8 @@ SETUVAR _fish_abbr_gwtmv:git\x20worktree\x20move
 SETUVAR _fish_abbr_gwtpr:git\x20worktree\x20prune
 SETUVAR _fish_abbr_gwtrm:git\x20worktree\x20remove
 SETUVAR _fish_abbr_gwtulo:git\x20worktree\x20unlock
+SETUVAR _fish_abbr_i:arch\x20\x2dx86_64
+SETUVAR _fish_abbr_ibrew:/usr/local/homebrew/bin/brew
 SETUVAR _fish_abbr_k:kubectl
 SETUVAR _fish_abbr_kd:kubectl\x20describe
 SETUVAR _fish_abbr_kdebug:kubectl\x20run\x20\x2di\x20\x2dt\x20debug\x20\x2d\x2drm\x20\x2d\x2dimage\x3dcaarlos0/debug\x20\x2d\x2drestart\x3dNever
@@ -214,10 +215,11 @@ SETUVAR _fisher_jethrokuan_2F_fzf_files:\x7e/\x2econfig/fish/functions/__fzf_cd\
 SETUVAR _fisher_jhillyerd_2F_plugin_2D_git_files:\x7e/\x2econfig/fish/functions/__git\x2ebranch_has_wip\x2efish\x1e\x7e/\x2econfig/fish/functions/__git\x2ecurrent_branch\x2efish\x1e\x7e/\x2econfig/fish/functions/__git\x2edefault_branch\x2efish\x1e\x7e/\x2econfig/fish/functions/__git\x2edestroy\x2efish\x1e\x7e/\x2econfig/fish/functions/__git\x2einit\x2efish\x1e\x7e/\x2econfig/fish/functions/__git\x2ereset\x2efish\x1e\x7e/\x2econfig/fish/functions/gbage\x2efish\x1e\x7e/\x2econfig/fish/functions/gbda\x2efish\x1e\x7e/\x2econfig/fish/functions/gdt\x2efish\x1e\x7e/\x2econfig/fish/functions/gdv\x2efish\x1e\x7e/\x2econfig/fish/functions/ggl\x2efish\x1e\x7e/\x2econfig/fish/functions/ggp\x2efish\x1e\x7e/\x2econfig/fish/functions/ggpnp\x2efish\x1e\x7e/\x2econfig/fish/functions/ggsup\x2efish\x1e\x7e/\x2econfig/fish/functions/ggu\x2efish\x1e\x7e/\x2econfig/fish/functions/gignored\x2efish\x1e\x7e/\x2econfig/fish/functions/glp\x2efish\x1e\x7e/\x2econfig/fish/functions/gpoat\x2efish\x1e\x7e/\x2econfig/fish/functions/grename\x2efish\x1e\x7e/\x2econfig/fish/functions/grt\x2efish\x1e\x7e/\x2econfig/fish/functions/gtl\x2efish\x1e\x7e/\x2econfig/fish/functions/gunwip\x2efish\x1e\x7e/\x2econfig/fish/functions/gwip\x2efish\x1e\x7e/\x2econfig/fish/conf\x2ed/git\x2efish
 SETUVAR _fisher_jorgebucaran_2F_autopair_2E_fish_files:\x7e/\x2econfig/fish/functions/_autopair_backspace\x2efish\x1e\x7e/\x2econfig/fish/functions/_autopair_insert_left\x2efish\x1e\x7e/\x2econfig/fish/functions/_autopair_insert_right\x2efish\x1e\x7e/\x2econfig/fish/functions/_autopair_insert_same\x2efish\x1e\x7e/\x2econfig/fish/functions/_autopair_tab\x2efish\x1e\x7e/\x2econfig/fish/conf\x2ed/autopair\x2efish
 SETUVAR _fisher_jorgebucaran_2F_fisher_files:\x7e/\x2econfig/fish/functions/fisher\x2efish\x1e\x7e/\x2econfig/fish/completions/fisher\x2efish
+SETUVAR _fisher_jorgebucaran_2F_nvm_2E_fish_files:\x7e/\x2econfig/fish/functions/_nvm_index_update\x2efish\x1e\x7e/\x2econfig/fish/functions/_nvm_list\x2efish\x1e\x7e/\x2econfig/fish/functions/_nvm_version_activate\x2efish\x1e\x7e/\x2econfig/fish/functions/_nvm_version_deactivate\x2efish\x1e\x7e/\x2econfig/fish/functions/nvm\x2efish\x1e\x7e/\x2econfig/fish/conf\x2ed/nvm\x2efish\x1e\x7e/\x2econfig/fish/completions/nvm\x2efish
 SETUVAR _fisher_jorgebucaran_2F_replay_2E_fish_files:\x7e/\x2econfig/fish/functions/replay\x2efish\x1e\x7e/\x2econfig/fish/completions/replay\x2efish
 SETUVAR _fisher_oh_2D_my_2D_fish_2F_plugin_2D_bang_2D_bang_files:\x7e/\x2econfig/fish/functions/__history_previous_command\x2efish\x1e\x7e/\x2econfig/fish/functions/__history_previous_command_arguments\x2efish\x1e\x7e/\x2econfig/fish/conf\x2ed/plugin\x2dbang\x2dbang\x2efish
 SETUVAR _fisher_oh_2D_my_2D_fish_2F_plugin_2D_grc_files:\x7e/\x2econfig/fish/functions/grc\x2ewrap\x2efish\x1e\x7e/\x2econfig/fish/conf\x2ed/executables\x1e\x7e/\x2econfig/fish/conf\x2ed/grc\x2efish
-SETUVAR _fisher_plugins:jorgebucaran/fisher\x1ejorgebucaran/autopair\x2efish\x1ejethrokuan/fzf\x1eoh\x2dmy\x2dfish/plugin\x2dgrc\x1ejorgebucaran/replay\x2efish\x1ecafedomancer/nodenv\x1eoh\x2dmy\x2dfish/plugin\x2dbang\x2dbang\x1ejhillyerd/plugin\x2dgit
+SETUVAR _fisher_plugins:jorgebucaran/fisher\x1ejorgebucaran/autopair\x2efish\x1ejethrokuan/fzf\x1eoh\x2dmy\x2dfish/plugin\x2dgrc\x1ejorgebucaran/replay\x2efish\x1ecafedomancer/nodenv\x1eoh\x2dmy\x2dfish/plugin\x2dbang\x2dbang\x1ejhillyerd/plugin\x2dgit\x1ejorgebucaran/nvm\x2efish
 SETUVAR _fisher_upgraded_to_4_4:\x1d
 SETUVAR fish_color_autosuggestion:555
 SETUVAR fish_color_cancel:\x2d\x2dreverse
@@ -262,3 +264,5 @@ SETUVAR fish_pager_color_selected_description:\x1d
 SETUVAR fish_pager_color_selected_prefix:\x1d
 SETUVAR fish_user_paths:/Users/xf/\x2ebun/bin\x1e/Users/xf/\x2edotfiles/bin\x1e/opt/homebrew/bin\x1e/Users/xf/Developer/Go/bin\x1e/Users/xf/\x2ecargo/bin
 SETUVAR --export home:\x24HOME
+SETUVAR nvm_data:/Users/xf/\x2elocal/share/nvm
+SETUVAR nvm_mirror:https\x3a//nodejs\x2eorg/dist

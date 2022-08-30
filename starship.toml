@@ -156,6 +156,17 @@ sigint_symbol = ''
 not_found_symbol = ''
 recognize_signal_code = true
 
+[git_state]
+rebase = 'rebase'
+merge = 'merge'
+revert = 'revert'
+cherry_pick = 'cherry'
+bisect = 'bisect'
+am = 'am'
+am_or_rebase = 'am/rebase'
+style = 'bold red bg:234'
+format = '[$state( $progress_current/$progress_total) ]($style)'
+
 [git_metrics]
 disabled = true
 
