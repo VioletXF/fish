@@ -1,16 +1,19 @@
 if status is-interactive
     # Commands to run in interactive sessions can go here
+  if type -q fcitx5
+    daemonize -e /tmp/fcitx5.log -o /tmp/fcitx5.log -p /tmp/fcitx5.pid -l /tmp/fcitx5.pid -a /usr/bin/fcitx5 --disable=wayland
+  end
 	if type -q nodenv
-		source (nodenv init - | psub)
+    source (nodenv init - | psub)
 	end
 	if type -q pyenv
-		source (pyenv init -| psub)
+    pyenv init - | source
 	end
 	if type -q thefuck
 		thefuck --alias | source
 	end
 	if type -q starship
-		starship init fish | source
+    starship init fish | source
 	else if not set -q DO_NOT_INSTALL_STARSHIP
 		read -l -P 'Install starship prompt? [Y/N] ' confirm
 		switch $confirm
@@ -28,7 +31,5 @@ if status is-interactive
 		end
 	end
 
-	test -e {$HOME}/.iterm2_shell_integration.fish ; and source {$HOME}/.iterm2_shell_integration.fish
+  test -e {$HOME}/.iterm2_shell_integration.fish ; and source {$HOME}/.iterm2_shell_integration.fish
 end
-
-
