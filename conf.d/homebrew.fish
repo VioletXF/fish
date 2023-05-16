@@ -1,1 +1,1 @@
-/Users/xf/.dotfiles/homebrew/conf.d/homebrew.fish
+C:/Users/xf/.dotfiles/homebrew/conf.d/homebrew.fish
