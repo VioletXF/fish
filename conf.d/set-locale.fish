@@ -1,1 +1,0 @@
-C:/Users/xf/.dotfiles/system/conf.d/set-locale.fish
