@@ -1,1 +1,0 @@
-/Users/xf/.dotfiles/yubikey/conf.d/yubikey.fish
