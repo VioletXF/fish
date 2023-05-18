@@ -1,6 +1,7 @@
 jorgebucaran/fisher
-jhillyerd/plugin-git
 jorgebucaran/autopair.fish
 jorgebucaran/replay.fish
 oh-my-fish/plugin-bang-bang
 edc/bass
+jhillyerd/plugin-git
+fabioantunes/fish-nvm

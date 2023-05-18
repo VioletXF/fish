@@ -6,9 +6,6 @@ if status is-interactive
   if type -q fcitx5
     daemonize -e /tmp/fcitx5.log -o /tmp/fcitx5.log -p /tmp/fcitx5.pid -l /tmp/fcitx5.pid -a /usr/bin/fcitx5 --disable=wayland
   end
-  if type -q nvm
-    load_nvm > /dev/stderr
-  end
 	if type -q nodenv
     source (nodenv init - | psub)
 	end
