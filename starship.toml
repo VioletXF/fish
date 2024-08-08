@@ -1,7 +1,9 @@
+command_timeout = 1000
 add_newline = false
 
 format = """
 [](234)\
+$hostname\
 $username\
 [ ](bg:234)\
 $directory\
@@ -172,3 +174,8 @@ disabled = true
 
 [fill]
 symbol = " "
+
+[hostname]
+ssh_only = true
+ssh_symbol = ''
+format = '[$ssh_symbol]($style bg:234 fg:39)'
