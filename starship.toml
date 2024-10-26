@@ -18,7 +18,6 @@ $fill\
 [$status\
 $docker_context\
 $custom\
-$c\
 $elixir\
 $elm\
 $golang\
@@ -131,7 +130,7 @@ format = '[$symbol ($version) ]($style bg:234)'
 symbol = ""
 pyenv_version_name = true
 style = "39 bold bg:234"
-format = '[$symbol ($version) ]($style)'
+format = '[${symbol} ${pyenv_prefix}(${version} )(\($virtualenv\) )]($style)'
 
 [nim]
 symbol = " "
@@ -172,3 +171,4 @@ disabled = true
 
 [fill]
 symbol = " "
+
