@@ -1,10 +1,19 @@
+fx --comp fish | source
 if status is-interactive
     # Commands to run in interactive sessions can go here
+  export MANPAGER='nvim +Man!'
+  if test -e ~/.asdf/plugins/golang/set-env.fish
+    source ~/.asdf/plugins/golang/set-env.fish
+  end
+
   if test -e ~/secrets.fish
     source ~/secrets.fish
   end
   if type -q fcitx5
     daemonize -e /tmp/fcitx5.log -o /tmp/fcitx5.log -p /tmp/fcitx5.pid -l /tmp/fcitx5.pid -a /usr/bin/fcitx5 --disable=wayland
+  end
+  if type -q fzf
+    fzf --fish | source
   end
   # if type -q nvm
   #   load_nvm > /dev/stderr
@@ -51,3 +60,14 @@ end
 
 ## opam configuration
 # source /Users/xf/.opam/opam-init/init.fish > /dev/null 2> /dev/null; or true
+
+fish_add_path -a /Users/xf/.foundry/bin
+zoxide init fish | source
+
+# Added by OrbStack: command-line tools and integration
+# This won't be added again if you remove it.
+source ~/.orbstack/shell/init2.fish 2>/dev/null || :
+
+# Added by Windsurf
+fish_add_path /Users/xf/.codeium/windsurf/bin
+fish_add_path $HOME/.local/bin
